@@ -1,0 +1,25 @@
+
+h1 {
+    color: green;
+}
+p {
+    font-weight: 100;
+    color:goldenrod
+}
+/* This is how to do a class */
+/* More specific labels will win */
+.blueText {
+    color: blue
+}
+
+/* This is an ID, this should apply to a single tag */
+#boldText {
+    font-weight: bold;
+}
+
+/* This will apply to any boldText tags. */
+/* In conflict, this is more specific. */
+#boldText:hover {
+    color:red;
+}
+
