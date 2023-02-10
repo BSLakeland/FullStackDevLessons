@@ -16,3 +16,7 @@ function sayHello() {
     alert(greeting);
     console.log("Hey ho!")
 }
+
+function surprise() {
+    alert("You get to buy me a pint")
+}
