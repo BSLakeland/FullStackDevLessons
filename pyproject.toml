@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "Example Project"
+version = "0.0.0"
+description = "Example project"
+authors = ["Ben Lakeland <bsl204@exeter.ac.uk>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
