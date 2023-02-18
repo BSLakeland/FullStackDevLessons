@@ -6,3 +6,9 @@ body {
     line-height: 1.42857143;
     margin: 0;
 }
+h1{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    color: #ffffff;
+}
