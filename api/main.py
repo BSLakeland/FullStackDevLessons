@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from datetime import datetime
+from pydantic import BaseModel
 import os
 
 from fastapi.staticfiles import StaticFiles
@@ -27,3 +28,10 @@ async def timepage():
 async def hello_name(request: Request, name: str):
     return settings.TEMPLATES.TemplateResponse("homepage.html", {"request": request, "name": name})
     # return f'<h1>Hello {name}</h1>'
+    
+class SampleInput(BaseModel):
+    x: int
+    
+@app.post("/sample")
+async def sample(input: SampleInput):
+    return input.x**2
