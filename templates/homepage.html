@@ -1,3 +1,15 @@
 {%extends "base.html"%} {%block content%}
 <h1>Hello {{name}}</h1>
+<input type="number" id="realValue" value="-1.373543" />
+<input type="number" id="imagValue" value="-0.01234831" />
+<br />
+
+<input type="number" id="widthInput" value="1080" />
+<input type="number" id="heightInput" value="720" />
+<br>
+<input type="number" id="zoomInput" value="0.1" />
+<input type="number" id="maxIterInput" value="100" />
+<output id="result">Result comes here</output>
+<br />
+<button onclick="image()">Sample!</button>
 {% endblock %}
